@@ -65,10 +65,10 @@ int main(int argc, const char **argv)
   int points [4] = {0};
   for (int i = 0 ; i < 4; i++)
   {
-    cin >> points[i];
+    std::in >> points[i];
     if(!(validateInput (points[i])))
     {
-      cout << "ERROR: Values should be between 0 and 100" << "\n";
+      std::cout << "ERROR: Values should be between 0 and 100" << "\n";
       return;
     }
   /*std::cin >> "Start_x: " >> start_x;
